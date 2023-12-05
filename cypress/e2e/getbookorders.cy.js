@@ -3,7 +3,7 @@ describe('Teste para obter todas as orders', () => {
   
     before(() => {
       // Lê as credenciais do cliente do arquivo cypress.json
-      cy.readFile('cypress.json').then((data) => {
+      cy.readFile('clientregistration.json').then((data) => {
         clientCredentials = {
           clientName: data.clientName,
           clientEmail: data.clientEmail,

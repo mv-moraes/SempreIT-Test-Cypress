@@ -6,7 +6,7 @@ describe('Registro de Cliente', () => {
       // Gera as credenciais do cliente
       clientCredentials = {
         clientName: 'SempreIT',
-        clientEmail: 'sempreITest@example.com',
+        clientEmail: 'sempreITAPI@example.com',
       };
     });
   
@@ -30,7 +30,7 @@ describe('Registro de Cliente', () => {
           accessToken: response.body.accessToken,
         };
   
-        cy.writeFile('cypress.json', dataToWrite);
+        cy.writeFile('clientregistration.json', dataToWrite);
       });
     });
   });

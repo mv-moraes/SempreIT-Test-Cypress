@@ -4,7 +4,7 @@ describe('Update de order', () => {
     before(() => {
       // Executa antes de todos os testes
       // Lê as credenciais do cliente do arquivo cypress.json
-      cy.readFile('cypress.json').then((data) => {
+      cy.readFile('clientregistration.json').then((data) => {
         clientCredentials = {
           clientName: data.clientName,
           clientEmail: data.clientEmail,
